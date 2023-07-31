@@ -1,0 +1,13 @@
+# project_1/docker-compose.yml
+version: '3'
+services:
+  terraform:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./infra:/app
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+

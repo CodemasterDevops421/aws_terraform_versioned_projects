@@ -1,6 +1,6 @@
 # infra/main.tf
 provider "aws" {
-  region = "us-west-2"
+  region = "ap-south-1"
 }
 
 resource "aws_s3_bucket" "bucket" {
